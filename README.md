@@ -30,10 +30,38 @@
 - 삼성 헬스 sdk 를 사용하는 브릿지 앱을 만든다
 - 데이터 흐름 : 데이터 입력 > 브릿지 앱 > 삼성 헬스
 
+### 참고
+- 삼성 sdk 개발자 가이드 문서
+  - https://developer.samsung.com/health/data/guide/hello-sdk/read-data.html
+- 삼성 sdk API 레퍼런스 문서
+  - https://developer.samsung.com/health/data/api-reference/-shd/com.samsung.android.sdk.health.data.request/-data-type/-body-composition-type/-companion/-w-e-i-g-h-t.html
+- 삼성 sdk download 문서
+  - 숨겨져 있음
+  - https://developer.samsung.com/health/data/process.html
+
+### 주의사항
+> 삼성헬스의 개발자 모드는 앱 개발 목적으로만 사용하도록 되어 있습니다.
+> 
+> **앱 사용자를 위해 개발자 모드를 사용해서는 안 됩니다.** <= !!
+> 
+> 개발자 모드를 사용하지 않고 앱을 실행하려면 파트너 신청을 제출해 주세요.
+> 
+> 앱에서 삼성헬스로 건강 데이터를 기록하려면 액세스 코드가 필요합니다. 
+> 
+> 파트너십을 신청하시면 승인 후 액세스 코드를 받으실 수 있습니다.
+
 ---
 ### 구현 todo task
 - [x] 삼성 헬스 sdk 데이터 읽기 테스트
 - [>] 삼성 헬스 sdk 데이터 쓰기 테스트
 - [ ] csv 날짜 몸무게 데이터 생성
 - [ ] csv 데이터를 삼성 헬스에 추가
+
+
+
+
+
+
+
+
 
