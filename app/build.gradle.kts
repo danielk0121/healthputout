@@ -1,8 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    // 아래 한 줄을 추가하세요
     id("kotlin-parcelize")
+    id("idea")
 }
 
 android {
@@ -26,11 +26,19 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
+    }
+
+    // IntelliJ IDEA가 Gradle의 빌드 결과물(.class) 폴더를 인식하도록 설정
+    idea {
+        module {
+            inheritOutputDirs = true // 다시 true로 돌려 기본 구조를 잡습니다.
+        }
     }
 }
 
