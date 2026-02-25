@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:hint="여기에 데이터를 입력하세요..."
+            android:text="2026-01-01, 71.1"
             android:gravity="top"
             android:background="@android:drawable/editbox_background"
             android:layout_marginTop="16dp"

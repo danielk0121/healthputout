@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="com.samsung.android.health.permission.read_weight" />
-    <uses-permission android:name="com.samsung.android.health.permission.write_weight" />
+    <uses-permission android:name="com.samsung.android.sdk.healthdata.permission.read" />
+    <uses-permission android:name="com.samsung.android.sdk.healthdata.permission.write" />
 
     <application
             android:allowBackup="true"
@@ -22,11 +22,8 @@
         </activity>
 
         <meta-data
-                android:name="com.samsung.android.health.permission.read"
-                android:value="com.samsung.health.weight" />
-        <meta-data
-                android:name="com.samsung.android.health.permission.write"
-                android:value="com.samsung.health.weight" />
+                android:name="com.samsung.android.health.data_type"
+                android:value="com.samsung.health.body_composition" />
 
     </application>
 </manifest>

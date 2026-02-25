@@ -43,6 +43,9 @@ class ReadFragment : Fragment() {
     }
 
     private suspend fun readWeightData() {
+        val permissionHelper = PermissionHelper()
+        permissionHelper.checkAndRequestReadPermission(requireActivity())
+
         try {
             val readRequest = DataTypes.BODY_COMPOSITION.readDataRequestBuilder
                 .setOrdering(Ordering.DESC).build()

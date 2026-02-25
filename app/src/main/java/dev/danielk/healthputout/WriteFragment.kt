@@ -43,6 +43,9 @@ class WriteFragment : Fragment() {
     }
 
     private suspend fun saveCsvToHealth(csvData: String) {
+        val permissionHelper = PermissionHelper()
+        permissionHelper.checkAndRequestWritePermission(requireActivity())
+
         val SYSTEM_OFFSET: ZoneOffset = OffsetDateTime.now().offset
 
         try {
